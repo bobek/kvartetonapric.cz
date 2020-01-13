@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900|Russo+One&display=swap&subset=latin-ext');
+
+* { box-sizing: border-box; }
+
+
+html { font-size: 17px; }
+
+body {
+	font: 400 1rem/1.4 Roboto, Arial, sans-serif;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.top-nav {
+	position: fixed;
+	top: 0; /* fixně přichyceno k horní hraně okna */
+	width: 100%;
+	border-bottom: 5px solid #ffde8d;
+	padding: 17px 15px 5px 15px; 
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.3)
+}
+
+.top-nav a {
+	opacity: 1; 
+	transition: opacity .3s ease-out;
+}
+
+.top-nav a:hover {
+	opacity: 0.7;
+	color: black;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 8px;
+	list-style-type: none;
+
+}
+
+.main-menu a {
+	text-decoration: none;
+	margin: 1rem;
+	color: #EEE;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2rem;
+	}
+
+.logo a {
+	color: #EEE;
+	font: 2rem 'Russo One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	
+}
+
+.page-header {
+	background-image: url('../images/header.jpg');
+	background-position: bottom;
+	background-size: cover;
+	padding: 17vh 0vh 8vh 0vh;
+	color: #000;
+	text-align: center;
+}
+
+.heading-h1 {
+	font-size: 3rem;
+	line-height: 3.5rem;
+}
+
+.header-p {
+	margin: 1.7rem 0;
+	font-weight: bold;
+	font-size: 1.05rem;
+}
+
+.about,
+.about-us  {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.align-left {text-align: left;}
+
+.heading-h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+
+.portfolio img {float: left;} /*odstraní mezery mezi obrázky*/
+
+.caption {position:  absolute;
+		top: 0;
+		font-size: 0.8em;
+		color:  #000;
+		background-color: rgba(255, 222, 141, 0.93);
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		font-weight: 400;
+		opacity: 0; 
+		transition: opacity .3s ease-out; 
+}
+
+.portfolio a {position: relative;
+			
+} 	
+				/*absolutně pozicováno do levého 
+					horního rohu relativně pozicovaného rodiče =.portfolio a {positon: realative;{*/
+
+.caption:hover {opacity: 1; 
+	
+}
+
+.contact	{text-align: center;
+			margin-top: 20px;}
+
+
+.contact_icons {
+				color: #333;
+				padding-top: 30px;
+				text-decoration: none;}
+
+.fa {
+	color: #eccd82;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	text-decoration: none;}	
+
+.size4 {font-size: 4em;}
+
+.contact_icons .fa {font-size: 2em;
+				color: #333;
+				padding-top: 30px;
+				text-decoration: none;}	
+
+.contact .fa {
+	display: block;
+}	
+
+.icon-menu {font-size: 1em;
+color:white;}
+.scroll-top {
+	font-size: 5em;
+	color: #ffde8d;
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	cursor: pointer;
+	display: none;
+}
+
+.margin-top50 {
+	margin-top: 50px
+}
